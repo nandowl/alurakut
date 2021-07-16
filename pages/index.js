@@ -161,9 +161,32 @@ export default function Home() {
               <button>
                 Criar comunidade
               </button>
-            </form>
+            </form>              
           </Box>
+          <Box>
+        <h2 className="subTitle">Deixe uma mensagem para seu amigo!</h2>       
+           
+          <div>
+            <input
+              placeholder="Digite o conteúdo aqui."
+              name="mensagem"
+              aria-label="Digite o conteúdo aqui."
+            />
+          </div> 
+          <button>
+            Enviar
+          </button>
+        </Box>
+        <Box>
+        <h2 className="subTitle">Suas Mensagens!</h2>
+          <div>            
+          </div>           
+        </Box>
         </div>
+
+        
+
+
         <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
           <ProfileRelationsBox title="Seguidores" items={seguidores} />
           <ProfileRelationsBoxWrapper>
